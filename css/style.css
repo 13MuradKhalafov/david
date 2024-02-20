@@ -1,0 +1,54 @@
+:root {
+    --yasil: #a1c927;
+    --qirmizi: #fd634d;
+}
+header {
+    position: relative;
+    height: 100vh;
+    background: url('../img/headerbg.jpg') 60%/cover;
+    text-align: center; 
+}
+nav { 
+    padding: 40px 50px;
+}
+nav, #title {
+    position: absolute; 
+    width: 100%;
+}
+#title { bottom: 17vh }
+h1 {
+    font: 2em "Myriad Pro";
+    text-transform: uppercase;
+    color: #fff;
+}
+h5 {
+    font: 1em "Myriad Pro";
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px
+}
+h1 span { color: var(--yasil) }
+h5 span { color: var(--qirmizi) }
+#menu li a {
+    font: .75em "Avenir Next Rounded Std";
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    h1 { font-size: 2.5em; }
+    header { text-align: initial; }
+    #menu { float: right }
+    #menu li { 
+        display: inline-block; 
+        padding: 0 2vw;
+    }
+    #title { 
+        width: initial;
+        left: 7vw;
+        text-align: right;
+    }
+}
